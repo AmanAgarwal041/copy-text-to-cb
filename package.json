@@ -1,6 +1,6 @@
 {
 	"name": "@gradeup/copy-text-to-cb",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "react component to copy text to clipboard with function to execute after copying.",
 	"main": "dist/index.js",
 	"scripts": {
