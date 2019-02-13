@@ -2,9 +2,9 @@
 	"name": "@gradeup/copy-text-to-cb",
 	"version": "1.0.0",
 	"description": "react component to copy text to clipboard with function to execute after copying.",
-	"main": "src/index.js",
+	"main": "dist/index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
+		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
 		"type": "git",
@@ -23,7 +23,7 @@
 	"author": "Aman Agarwal",
 	"license": "ISC",
 	"dependencies": {
-		"prop-types": "^15.7.1",
+		"prop-types": "^15.7.1"
 	},
 	"devDependencies": {
 		"@babel/preset-react": "^7.0.0"
