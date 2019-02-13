@@ -23,7 +23,7 @@ class CopyText extends React.Component {
 	}
 
 	render() {
-		const { component: Component, popStyle, pop } = this.props;
+		const { component: Component, popStyle, pop, classes } = this.props;
 		const style = Object.assign(
 			{
 				opacity: `${this.state.copying ? '0.75' : '0'}`,
@@ -33,7 +33,7 @@ class CopyText extends React.Component {
 		);
 
 		return (
-			<div style={{ position: 'relative' }}>
+			<div style={{ position: 'relative' }} className={classes}>
 				{ pop ? <span style={style}>Copied!</span> : null }
 				<Component onClick={this.handleClick}/>
 			</div>
@@ -43,6 +43,7 @@ class CopyText extends React.Component {
 
 CopyText.propTypes = {
 	text: PropTypes.string.isRequired,
+	classes: PropTypes.string,
 	component: PropTypes.func,
 	cb: PropTypes.func,
 	pop: PropTypes.bool,
@@ -50,6 +51,7 @@ CopyText.propTypes = {
 };
 
 CopyText.defaultProps = {
+	classes: '',
 	component: emptyComp,
 	cb: noop,
 	pop: true,
